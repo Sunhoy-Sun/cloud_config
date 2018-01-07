@@ -1,0 +1,5 @@
+zuul:
+  routes:
+      service1:
+        path: /service1/**
+        serviceId: ms-service1

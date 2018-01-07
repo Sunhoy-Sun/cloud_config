@@ -1,0 +1,156 @@
+endpoints:
+  autoconfig:
+    enabled: false
+  beans:
+    enabled: false
+  configprops:
+    enabled: false
+  dump:
+    enabled: false
+  env:
+    enabled: false
+  health:
+    enabled: true
+  info:
+    enabled: true
+  metrics:
+    enabled: false
+  mappings:
+    enabled: false
+  shutdown:
+    enabled: false
+  trace:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
+service:
+  gateway: 
+    name: gateway
+
+success:
+  curd: 
+    k: 200
+    v: success
+
+TimeZone: GMT+8:00 
+
+error:
+  parameter:
+    missing:
+      k: 1000
+      v: 缺少参数
+    invalid:
+      k: 1001
+      v: 无效参数
+    type:
+      k: 1002
+      v: 类型错误
+    captcha:
+      k: 1003
+      v: 验证码错误
+    insert: 
+      k: 2001
+      v: 新增记录失败
+    delete: 
+      k: 2002
+      v: 删除记录失败
+    update:
+      k: 2003
+      v: 更新记录失败
+    select:
+      k: 2004
+      v: 记录不存在
+  record:
+    existing: 
+      k: 3000
+      v: 记录已存在
+    notexisting:
+      k: 400
+      v: 记录不存在
+    notExist: 
+      k: 3001
+      v: 记录不存在
+  certificate:
+    invalid: 
+      k: 4001
+      v: 用户名不存在
+  password:
+    invalid:
+      k: 403
+      v: 密码错误
+  authorized:
+    invalid:
+      k: 401
+      v: 未授权
+  date:
+    format:
+      k: 4003
+      v: 日期类型转换错误
+  phone:
+    format:
+      k: 4004
+      v: 手机号格式错误
+  email:
+    format:
+      k: 4005
+      v: 邮箱格式错误
+  param: 
+    missing: 
+      k: 1000 
+      v: 缺少参数
+    invalid: 
+      k: 1001
+      v: 无效参数
+    date: 
+      k: 1002
+      v: 日期类型错误
+    phone: 
+      k: 1003
+      v: 手机号码格式错误
+    mail: 
+      k: 1004
+      v: 邮箱格式错误
+  curd: 
+    failed: 
+      k: 2000
+      v: 服务器繁忙（后台报错）
+    insert: 
+      k: 2001
+      v: 新增记录失败
+    delete: 
+      k: 2002
+      v: 删除记录失败
+    update:
+      k: 2003
+      v: 更新记录失败
+    select: 
+      k: 2004
+      v: 查找记录失败
+  auth: 
+    invalid: 
+      k: 4000
+      v: 认证失败
+    token: 
+      k: 4001
+      v: 无效的access_token
+    tokenExpired: 
+      k: 4002
+      v: access_token已过期
+    refresh: 
+      k: 4003
+      v: 无效的refresh_token
+    refreshExpired: 
+      k: 4004
+      v: refresh_token已过期
+    username: 
+      k: 4005
+      v: 无效的用户名
+    password:
+      k: 4006
+      v: 密码错误
+    captcha: 
+      k: 4007
+      v: 验证码错误或已过期
